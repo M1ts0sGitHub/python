@@ -9,7 +9,7 @@ def is_prime(number: int) -> bool:
             return False
     return True
 
-a,b,n = 17,2 * 3 * 5 * 7 * 11 * 13* 17,1
+a,b,n = 82799,2 * 3 * 5 * 7 * 11 * 13* 17* 19 * 23,1
 
 pbar = tqdm(desc="Searching for prime", bar_format='{desc}')
 while not is_prime(a+n*b):

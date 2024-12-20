@@ -45,7 +45,7 @@ def find_next_prime(a: int, b: int, n: int, small_primes: list[int]) -> int:
 
 def main():
     # Initialize parameters
-    a, b = 17, 2 * 3 * 5 * 7 * 11 * 13 * 17
+    a, b = 1920477, 2 * 3 * 5 * 7 * 11 * 13 * 17 * 19 * 23
     n = 1
     
     # Pre-compute small primes up to 10000 using sieve

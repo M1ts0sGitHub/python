@@ -1,6 +1,15 @@
-list = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]
+l = [1,2,3,4,5,6,7,8,9]
 
-#print all < 50
-print([x for x in list if x < 50])
+print(l)
+
+# remove 4 & 7
+l.remove(4)
+l.remove(7)
 
 
+print(l)
+
+#instert at start 0
+l.insert(0,0)
+
+print(l[-1])

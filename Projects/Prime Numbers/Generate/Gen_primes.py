@@ -26,7 +26,7 @@ def helpful_primes(how_many_prime_numbers:int):
             print('Helping numbers loaded from file')
         return h1, h2, h3
     except Exception as e:
-        print(f"Failed to read the file: {e}")
+        pass
 
     global prime_numbers
 
@@ -34,18 +34,23 @@ def helpful_primes(how_many_prime_numbers:int):
     prime_numbers = [2] + [num for num in range(3,50,2) if is_prime(num,0)]
 
     #Generating Helping Numbers 
+    #h1 : Number of columns
+    #h2 : Which primes
+    #h3 : How many primes
+
     h1 = 1
     for i in range(how_many_prime_numbers):
         h1 *= prime_numbers[i]
-    
+
     print('Generating Prime Numbers for Helping in next step')
     for i in tqdm.tqdm(range(prime_numbers[-1]+2,h1,2),desc='Generating primes'):
         if is_prime(i):
             prime_numbers.append(i)
-    
+
     h2 = prime_numbers
-    for i in range(how_many_prime_numbers):
-        h2.remove(prime_numbers[i])
+    for _ in range(how_many_prime_numbers):
+        print(f'Removing {prime_numbers[0]} from helping numbers')
+        h2.remove(prime_numbers[0])
     h2.insert(0,1)
 
     h3 = len(h2)
@@ -62,10 +67,8 @@ def helpful_primes(how_many_prime_numbers:int):
 
 #initializing prime numbers list
 prime_numbers = []
-h1, h2, h3 = helpful_primes(3)
-print(h1,h3)
+h1, h2, h3 = helpful_primes(9)
 
-print(h2)
 
 #write to file h1, h2, h3
 

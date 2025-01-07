@@ -1,15 +1,13 @@
-l = [1,2,3,4,5,6,7,8,9]
+import yt_dlp
 
-print(l)
-
-# remove 4 & 7
-l.remove(4)
-l.remove(7)
+#use yt_dlp to download pornhub's video
+# get formats with --list-formats
+ydl_opts = {'listformats': True}
 
 
-print(l)
 
-#instert at start 0
-l.insert(0,0)
+ydl_opts = {'format': '720p'}
 
-print(l[-1])
+
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    ydl.download(['https://www.pornhub.com/view_video.php?viewkey=676e8afcacf1a'])   

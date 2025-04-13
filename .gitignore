@@ -1,0 +1,11 @@
+# Ignore all files in downloads directory
+downloads/
+
+# Alternatively, to ignore only video files in downloads directory
+# downloads/*.mp4
+# downloads/*.avi
+# downloads/*.mkv
+# downloads/*.mov
+# downloads/*.wmv
+# downloads/*.flv
+# downloads/*.webm

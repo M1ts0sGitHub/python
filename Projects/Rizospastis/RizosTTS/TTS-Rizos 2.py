@@ -188,5 +188,3 @@ if __name__ == "__main__":
     else:
         os.system("start https://www.rizospastis.gr/textOnly.do?nav=true")
         os.system(f"notepad  {input_file}")
-    
-    input("Press Enter to exit...")

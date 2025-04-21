@@ -1,4 +1,5 @@
-import keyboard, time, os
+import keyboard
+import time, os
 import pygame
 
 class pomotimer():

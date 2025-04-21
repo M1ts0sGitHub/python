@@ -1,0 +1,4 @@
+2025-04-16 00:17:30 - INFO - Media Downloader started
+2025-04-16 00:18:01 - WARNING - Proceeding without cookies.
+2025-04-16 00:22:25 - INFO - Success (megatv.com): 595231 -> video [\u0386\u03b3\u03b9\u03bf\u03c2 \u03a0\u03b1\u0390\u03c3\u03b9\u03bf\u03c2, \u0391\u03c0\u03cc \u03c4\u03b1 \u03a6\u03ac\u03c1\u03b1\u03c3\u03b1 \u03c3\u03c4\u03bf\u03bd \u039f\u03c5\u03c1\u03b1\u03bd\u03cc\uff1a \u0395\u03c0\u03b5\u03b9\u03c3\u03cc\u03b4\u03b9\u03bf 1 - A' \u039a\u03a5\u039a\u039b\u039f\u03a3  [595231].mp4]
+2025-04-16 00:22:54 - INFO - Removed https://www.megatv.com/tvshows/595231/epeisodio-1-68/ from video.txt
